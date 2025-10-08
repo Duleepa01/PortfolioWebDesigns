@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexTrend | Modern Fashion E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </div>
+    
+    <header class="glass-header">
+        <div class="logo">NexTrend</div>
+        <nav>
+            <ul>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Sale</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-user"></i>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+    
+    <main class="products-page">
+        <div class="dynamic-grid">
+            <aside class="filters-panel">
+                <div class="filter-header">
+                    <h2>Refine</h2>
+                    <button class="filter-close">&times;</button>
+                </div>
+                <div class="filter-group">
+                    <h3>Category</h3>
+                    <ul class="filter-list">
+                        <li>
+                            <input type="checkbox" id="category-1">
+                            <label for="category-1">Technical Outerwear</label>
+                        </li>
+                        <!-- More categories -->
+                    </ul>
+                </div>
+            </aside>
+
+            <div class="product-masonry">
+                <div class="masonry-item">
+                    <div class="product-card">
+                        <div class="product-media">
+                            <img src="product1.jpg" alt="Product" loading="lazy">
+                            <div class="product-overlay">
+                                <button class="quick-view">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-meta">
+                            <h3>Neo Utility Vest</h3>
+                            <p class="price">$299</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- More items -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>NexTrend</h3>
+                <p>Redefining modern fashion with sustainable and stylish choices.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 NexTrend. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Your Cart</h3>
+                <span class="close-cart">&times;</span>
+            </div>
+            <div class="cart-items">
+                <!-- Cart items will be loaded here -->
+            </div>
+            <div class="cart-total">
+                <p>Total: <span class="total-amount">$0.00</span></p>
+                <button class="checkout-btn neumorphic-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+    <div class="project-modal" id="ecommerce-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <button class="modal-close" data-cursor="-exclusive">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+            </button>
+            
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="modal-category">E-Commerce</span>
+                    <h2 class="modal-title">Luxe Fashion Hub</h2>
+                    <div class="modal-meta">
+                        <span>Client: FashionBrand Inc.</span>
+                        <span>Year: 2023</span>
+                    </div>
+                </div>
+                
+                <div class="modal-body">
+                    <div class="project-showcase">
+                        <video controls autoplay muted loop class="showcase-video">
+                            <source src="ecommerce-full-demo.mp4" type="video/mp4">
+                        </video>
+                        <div class="showcase-thumbnails">
+                            <img src="ecommerce-1.jpg" alt="Homepage">
+                            <img src="ecommerce-2.jpg" alt="Product Page">
+                            <img src="ecommerce-3.jpg" alt="Checkout">
+                        </div>
+                    </div>
+                    
+                    <div class="project-details">
+                        <div class="details-column">
+                            <h3>Overview</h3>
+                            <p>A premium e-commerce experience built with React and Node.js, featuring:</p>
+                            <ul>
+                                <li>3D product visualization</li>
+                                <li>AI-powered recommendations</li>
+                                <li>Seamless checkout flow</li>
+                                <li>Mobile-first responsive design</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="details-column">
+                            <h3>Technologies</h3>
+                            <div class="tech-stack">
+                                <span>React</span>
+                                <span>Three.js</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                                <span>GSAP</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="https://example.com" target="_blank" class="live-link" data-cursor="-exclusive">
+                                    <span>Live Site</span>
+                                    <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                                </a>
+                                <a href="https://github.com/yourrepo" target="_blank" class="code-link" data-cursor="-exclusive">
+                                    <span>View Code</span>
+                                    <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* Quantum Design System */
+:root {
+    --quantum-1: #6c5ce7;
+    --quantum-2: #a66efa;
+    --hologram-gradient: linear-gradient(
+        45deg,
+        rgba(108,92,231,0.8),
+        rgba(166,110,250,0.8)
+    );
+}
+
+/* Holographic Effects */
+.holographic {
+    position: relative;
+    background: var(--hologram-gradient);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.holographic::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        45deg,
+        transparent 50%,
+        rgba(255,255,255,0.1)
+    );
+    pointer-events: none;
+}
+
+/* Interactive Particles */
+[data-interactive]:hover {
+    animation: particle-flow 1.5s infinite;
+}
+
+@keyframes particle-flow {
+    0% { background-position: 0 0 }
+    100% { background-position: 100% 100% }
+}
+
+/* XR Viewport */
+.xr-viewer {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background: rgba(0,0,0,0.5);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.model-container {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+/* Neural Filters */
+.neuro-filter-group {
+    background: rgba(255,255,255,0.05);
+    padding: 1.5rem;
+    border-radius: 15px;
+    transition: all 0.3s quantum-ease;
+}
+
+.style-neurons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 1rem;
+}
+
+.neuron {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--quantum-1);
+    cursor: pointer;
+    transition: transform 0.3s quantum-ease;
+}
+
+.neuron.active {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px var(--quantum-2);
+}
+
+/* Quantum Animations */
+@keyframes quantum-pulse {
+    0% { opacity: 1 }
+    50% { opacity: 0.5 }
+    100% { opacity: 1 }
+}
+
+.product-matrix {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.matrix-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+
+.card-layers {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.image-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: transform 0.5s quantum-ease;
+}
+
+.matrix-card:hover .image-layer {
+    transform: translateZ(50px);
+}

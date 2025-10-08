@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexTrend | Modern Fashion E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </div>
+    
+    <header class="glass-header">
+        <div class="logo">NexTrend</div>
+        <nav>
+            <ul>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Sale</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-user"></i>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    
+    <main class="checkout-flow">
+        <div class="checkout-progress">
+            <div class="progress-step active">
+                <div class="step-indicator">1</div>
+                <span class="step-label">Shipping</span>
+            </div>
+            <div class="progress-step">
+                <div class="step-indicator">2</div>
+                <span class="step-label">Payment</span>
+            </div>
+            <div class="progress-step">
+                <div class="step-indicator">3</div>
+                <span class="step-label">Review</span>
+            </div>
+            <div class="progress-bar"></div>
+        </div>
+
+        <div class="checkout-panels">
+            <div class="shipping-panel active">
+                <h2>Shipping Details</h2>
+                <form class="shipping-form">
+                    <!-- Form fields -->
+                </form>
+            </div>
+
+            <div class="payment-panel">
+                <h2>Payment Method</h2>
+                <div class="payment-options">
+                    <div class="payment-card">
+                        <div class="card-logo"></div>
+                        <div class="card-details">
+                            <div class="card-number">•••• 4242</div>
+                            <div class="card-expiry">12/25</div>
+                        </div>
+                    </div>
+                    <button class="add-payment">Add New Card</button>
+                </div>
+            </div>
+
+            <div class="review-panel">
+                <h2>Order Summary</h2>
+                <div class="review-items">
+                    <!-- Cart items -->
+                </div>
+                <button class="confirm-order">Confirm Order</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>NexTrend</h3>
+                <p>Redefining modern fashion with sustainable and stylish choices.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 NexTrend. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Your Cart</h3>
+                <span class="close-cart">&times;</span>
+            </div>
+            <div class="cart-items">
+                <!-- Cart items will be loaded here -->
+            </div>
+            <div class="cart-total">
+                <p>Total: <span class="total-amount">$0.00</span></p>
+                <button class="checkout-btn neumorphic-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
