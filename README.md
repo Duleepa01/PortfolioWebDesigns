@@ -11,7 +11,4 @@ This repository contains my front-end web design projects, showcasing skills in 
 - **Tech Stack:** HTML, CSS, JavaScript
 - **Folder:** `PersonalPortfolio/`
 
-## How to View
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/PortfolioWebDesigns.git
+
